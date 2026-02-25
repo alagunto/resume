@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikolai Tkachenko - Senior Software Engineer</title>
+    <style>
+        :root {
+            --bg: #0f1419;
+            --surface: #1a1f29;
+            --text: #e6edf3;
+            --text-dim: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --border: #30363d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            padding: 2rem 1rem;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+        }
+        
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .contact a:hover {
+            color: var(--accent-hover);
+        }
+        
+        .meta {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+        
+        section {
+            margin: 2.5rem 0;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+        
+        .job {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--border);
+        }
+        
+        .job-header {
+            margin-bottom: 0.75rem;
+        }
+        
+        .job-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        
+        .company {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        
+        .period {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+        
+        .job-description {
+            color: var(--text-dim);
+            line-height: 1.7;
+        }
+        
+        .job-description ul {
+            margin-top: 0.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        .job-description li {
+            margin: 0.5rem 0;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .skill-tag {
+            background: var(--border);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+        
+        .about {
+            background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(88, 166, 255, 0.05));
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .contact {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nikolai Tkachenko</h1>
+            <div class="subtitle">Senior Software Engineer · Tech Lead · CTO</div>
+            <div class="meta">Male, 28 years · Armenia · Russian Citizenship</div>
+            <div class="contact">
+                <span>📧 <a href="mailto:casteyftw@gmail.com">casteyftw@gmail.com</a></span>
+                <span>📱 <a href="https://t.me/alagunto">@alagunto</a></span>
+                <span>💼 <a href="https://linkedin.com/in/nikolay-tkachenko-699741b9">LinkedIn</a></span>
+            </div>
+        </header>
+
+        <section>
+            <div class="about">
+                <strong>Senior Software Engineer and Tech Lead</strong> with 9+ years of hands-on experience building high-load distributed systems in Golang and Python. Led teams of 3-10 engineers, from architecture design to production delivery.
+                <br><br>
+                <strong>Core expertise:</strong> Golang (5+ years), Python, PHP/Laravel, PostgreSQL, Redis, RabbitMQ, Kafka, Docker, microservices architecture. Strong focus on performance optimization—reduced latency from 30ms to 4ms in trading systems, improved page load by 60ms at scale.
+                <br><br>
+                Background in cybersecurity, competitive programming (CTF top-20 globally), and algotrading. Built and scaled products from zero to $1M+ turnover as CTO/cofounder.
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">CTO, Co-founder · <span class="company">L4R4</span></div>
+                    <div class="period">November 2024 — December 2025 · 1 year 2 months</div>
+                </div>
+                <div class="job-description">
+                    Built and scaled a marketplace for niche, technologically complex digital products. Successfully launched in Dec 2024 and reached <strong>$1M+ turnover with positive net income in Q1 2025</strong>. Led a focused, high-performing team to establish clear technological leadership, driving a major restructuring of the market landscape. In Q2, orchestrated a strategic pivot toward larger markets to unlock broader growth opportunities.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Tech Lead / Golang · <span class="company">Razan (side project)</span></div>
+                    <div class="period">September 2018 — March 2025 · 6 years 7 months</div>
+                </div>
+                <div class="job-description">
+                    Developed a platform for professional sports bettors, enabling the execution of betting signals across multiple bookmakers with a single click.
+                    <ul>
+                        <li>Led a team of 3 mid-level developers, supported over 15 different bookmakers</li>
+                        <li>Processed 137k bets, handling nearly <strong>$1.5M in turnover over six years</strong></li>
+                        <li>Tech stack: NATS and RabbitMQ for messaging, Postgres, Go-based multi-service architecture with over 100k lines of code</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Software Engineer (Infrastructure) · <span class="company">Aurora Labs</span></div>
+                    <div class="period">March 2023 — October 2024 · 1 year 8 months · <a href="https://auroralabs.dev/" style="color: var(--accent);">auroralabs.dev</a></div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Developed an internal tool ensuring integrity and security of blockchain data flow across infrastructure</li>
+                        <li>Contributed to accelerating NEAR block propagation between blockchain nodes</li>
+                        <li>Designed and implemented a Relayer to enable Ethereum wallets (MetaMask) to interact with NEAR blockchain</li>
+                        <li>Advocated for and implemented <strong>OpenTelemetry</strong> as company-wide observability solution</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Senior Golang Backend Developer · <span class="company">HUBUC</span></div>
+                    <div class="period">May 2022 — January 2023 · 9 months · <a href="https://hubuc.com" style="color: var(--accent);">hubuc.com</a></div>
+                </div>
+                <div class="job-description">
+                    Worked as part of the Core team in a dynamic, fast-paced startup, ensuring rapid integration of system changes. Improved the client API experience by adding support for currency conversions, optimizing workflows, and performing extensive code refactoring to enhance system stability.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Senior Golang Developer · <span class="company">SberMarket (now Kuper)</span></div>
+                    <div class="period">October 2021 — June 2022 · 9 months · Moscow, Russia</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Designed architecture blueprint for delivery pricing service (critical revenue stream), presented to Architectural Committee</li>
+                        <li>Transformed delivery pricing from rigid algorithm into <strong>flexible, modular service</strong> enabling rapid creation of new pricing strategies</li>
+                        <li>Enabled A/B testing and faster iterations, improving business agility and competitiveness</li>
+                        <li>Contributed to ETA service calculating accurate "click-to-eat" time predictions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Recommender System Developer · <span class="company">ivi</span></div>
+                    <div class="period">March 2020 — October 2021 · 1 year 8 months · Moscow, Russia</div>
+                </div>
+                <div class="job-description">
+                    Led performance optimization efforts for the Recommender system of a major online cinema platform. <strong>Improved main page loading time on ivi.ru by approximately 60ms</strong>, enhancing user experience and site performance.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Go, PHP Backend Developer · <span class="company">T1 Group</span></div>
+                    <div class="period">August 2019 — February 2020 · 7 months · Moscow, Russia</div>
+                </div>
+                <div class="job-description">
+                    Maintained and enhanced RNIS (Regional Navigational Information System), processing telemetry data from traffic and emergency services vehicles. Managed complex tech stack: Golang microservices, RabbitMQ, MongoDB, PHP/Laravel/PostgreSQL, Redis, etcd, Rancher, Docker.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Golang, Python Developer · <span class="company">&lt;NDA&gt;</span></div>
+                    <div class="period">August 2018 — August 2019 · 1 year 1 month · Moscow, Russia</div>
+                </div>
+                <div class="job-description">
+                    Designed tick-based trading simulator for crypto exchanges in seed-stage startup (~10 employees). <strong>Optimized connectivity, reducing round trip time from 30ms to 4ms</strong>—critical for trading execution speed. Despite company bankruptcy, simulator continues to be used in new startup iteration.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Computer Science Teacher · <span class="company">School of Programmers</span></div>
+                    <div class="period">May 2016 — June 2019 · 3 years 2 months · Moscow, Russia</div>
+                </div>
+                <div class="job-description">
+                    Taught computer networks, OS architecture, programming (C++, Java, Python, JS), and information security. Mentored a CTF team <strong>ranked in top 20 globally</strong> (<a href="https://ctftime.org/team/83435" style="color: var(--accent);">ctftime.org/team/83435</a>).
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">CTO · <span class="company">B**ch Intelligence</span></div>
+                    <div class="period">August 2016 — May 2018 · 1 year 10 months · Moscow, Russia</div>
+                </div>
+                <div class="job-description">
+                    Co-founded web development studio, served as CTO overseeing technical strategy and infrastructure. Led team of 5-10 developers. Partnered with HookahPlace (largest hookah franchise globally). Successfully repelled DDoS attack during JCFest. Exited by selling shares.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Golang</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PHP/Laravel</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Redis</span>
+                <span class="skill-tag">RabbitMQ</span>
+                <span class="skill-tag">Kafka</span>
+                <span class="skill-tag">NATS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Microservices</span>
+                <span class="skill-tag">High-load Systems</span>
+                <span class="skill-tag">Information Security</span>
+                <span class="skill-tag">Team Leadership</span>
+                <span class="skill-tag">Architecture Design</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Computer Science, Software Engineering</div>
+                    <div class="company">Higher School of Economics (HSE), Moscow</div>
+                    <div class="period">2015-2019 · Incomplete higher education</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <div class="skills">
+                <span class="skill-tag">Russian — Native</span>
+                <span class="skill-tag">English — B2 (Upper Intermediate)</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
