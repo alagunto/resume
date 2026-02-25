@@ -204,7 +204,12 @@
                     <div class="period">November 2024 — December 2025 · 1 year 2 months</div>
                 </div>
                 <div class="job-description">
-                    Built and scaled a marketplace for niche, technologically complex digital products. Successfully launched in Dec 2024 and reached <strong>$1M+ turnover with positive net income in Q1 2025</strong>. Led a focused, high-performing team to establish clear technological leadership, driving a major restructuring of the market landscape. In Q2, orchestrated a strategic pivot toward larger markets to unlock broader growth opportunities.
+                    Built and scaled a marketplace for niche, technologically complex digital products. Successfully launched in Dec 2024 and reached <strong>$1M+ turnover with positive net income in Q1 2025</strong>. Led a focused, high-performing team to establish clear technological leadership, driving a major restructuring of the market landscape.
+                    <ul>
+                        <li><strong>AI Integration:</strong> Integrated LLM-powered customer support automation, product recommendations, and fraud detection systems</li>
+                        <li><strong>Architecture:</strong> Microservices architecture with multiple Telegram bots (storefront, admin, dispenser, warden), payment processing services, and event-driven workflows</li>
+                        <li><strong>Tech Stack:</strong> Golang microservices, PostgreSQL (Neon.tech), message queues, Docker deployment</li>
+                    </ul>
                 </div>
             </div>
 
@@ -216,8 +221,10 @@
                 <div class="job-description">
                     Developed a platform for professional sports bettors, enabling the execution of betting signals across multiple bookmakers with a single click.
                     <ul>
+                        <li><strong>AI/ML:</strong> Implemented AI-powered bet signal analysis and automated signal generation for sports betting</li>
                         <li>Led a team of 3 mid-level developers, supported over 15 different bookmakers</li>
                         <li>Processed 137k bets, handling nearly <strong>$1.5M in turnover over six years</strong></li>
+                        <li><strong>Parallel Project (PhoneHub):</strong> Built cloud-based phone system for remote operators — Go backend + React frontend + Windows WPF + Android app with WebSocket real-time communication and Bluetooth HFP integration</li>
                         <li>Tech stack: NATS and RabbitMQ for messaging, Postgres, Go-based multi-service architecture with over 100k lines of code</li>
                     </ul>
                 </div>
@@ -315,30 +322,110 @@
         </section>
 
         <section>
-            <h2>Skills</h2>
+            <h2>Technical Skills</h2>
             <div class="skills">
-                <span class="skill-tag">Golang</span>
+                <span class="skill-tag">Golang (5+ years)</span>
                 <span class="skill-tag">Python</span>
+                <span class="skill-tag">TypeScript/JavaScript</span>
                 <span class="skill-tag">PHP/Laravel</span>
+                <span class="skill-tag">C# / .NET</span>
+                <span class="skill-tag">Kotlin (Android)</span>
+            </div>
+            <div class="skills" style="margin-top: 0.5rem;">
                 <span class="skill-tag">PostgreSQL</span>
                 <span class="skill-tag">MongoDB</span>
                 <span class="skill-tag">Redis</span>
+                <span class="skill-tag">ClickHouse</span>
+                <span class="skill-tag">Vector Databases</span>
+            </div>
+            <div class="skills" style="margin-top: 0.5rem;">
                 <span class="skill-tag">RabbitMQ</span>
                 <span class="skill-tag">Kafka</span>
                 <span class="skill-tag">NATS</span>
+                <span class="skill-tag">gRPC</span>
+                <span class="skill-tag">WebSocket</span>
+            </div>
+            <div class="skills" style="margin-top: 0.5rem;">
                 <span class="skill-tag">Docker</span>
                 <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">Terraform</span>
+                <span class="skill-tag">CI/CD</span>
                 <span class="skill-tag">Microservices</span>
-                <span class="skill-tag">High-load Systems</span>
+            </div>
+            <div class="skills" style="margin-top: 0.5rem;">
                 <span class="skill-tag">AI Agents & LLMs</span>
                 <span class="skill-tag">RAG Systems</span>
-                <span class="skill-tag">Vector Databases</span>
-                <span class="skill-tag">Agent Memory Systems</span>
+                <span class="skill-tag">Agent Memory (DAG)</span>
                 <span class="skill-tag">Multi-Agent Orchestration</span>
+                <span class="skill-tag">MCP Protocol</span>
                 <span class="skill-tag">Prompt Engineering</span>
+                <span class="skill-tag">Semantic Search</span>
+            </div>
+            <div class="skills" style="margin-top: 0.5rem;">
+                <span class="skill-tag">Blockchain (NEAR)</span>
+                <span class="skill-tag">Web3</span>
                 <span class="skill-tag">Information Security</span>
+                <span class="skill-tag">Penetration Testing</span>
+            </div>
+            <div class="skills" style="margin-top: 0.5rem;">
                 <span class="skill-tag">Team Leadership</span>
                 <span class="skill-tag">Architecture Design</span>
+                <span class="skill-tag">High-load Systems</span>
+                <span class="skill-tag">Performance Optimization</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Open Source & AI Projects</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">TeleLLM · <span class="company">MCP Server for Telegram Automation</span></div>
+                    <div class="period">Active Development</div>
+                </div>
+                <div class="job-description">
+                    Model Context Protocol server providing 40+ tools for AI agent automation of Telegram. Built for OSINT, marketing research, and data mining. Features rate limiting, circuit breaker, comprehensive error handling, and type-safe Pydantic models.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Doraw · <span class="company">E2E Testing Framework for Telegram Bots</span></div>
+                    <div class="period">Production Ready</div>
+                </div>
+                <div class="job-description">
+                    Python framework for end-to-end testing of Telegram bots using real user accounts. Features AI-based capture mode for smart test assertions, parallel testing with multiple workers, account pooling, and isolation. Simple async/await API with full type safety.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">A-MEM · <span class="company">Agent Memory System</span></div>
+                    <div class="period">Production Ready</div>
+                </div>
+                <div class="job-description">
+                    Advanced memory system for AI agents with DAG (Directed Acyclic Graph) structure, semantic search using embeddings, recursive link loading, and MCP server interface. Designed for persistent agent memory with contextual retrieval and temporal linking.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">tb · <span class="company">Modern Telegram Bot Library for Go</span></div>
+                    <div class="period">Production Ready</div>
+                </div>
+                <div class="job-description">
+                    Type-safe Telegram bot framework with generic <code>Bot[RequestType]</code> API, chainable send methods, clean architecture, and production features (exponential backoff, graceful shutdown, webhooks). Used in multiple production systems.
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Additional MCP Servers · <span class="company">AI Tool Ecosystem</span></div>
+                    <div class="period">Active Development</div>
+                </div>
+                <div class="job-description">
+                    Built multiple Model Context Protocol servers: TTS integration (tts-mcp), v0 design automation (v0mcp), and custom tool servers. Contributed to expanding AI agent capabilities across various domains.
+                </div>
             </div>
         </section>
 
